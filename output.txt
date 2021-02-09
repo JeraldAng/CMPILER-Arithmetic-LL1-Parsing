@@ -1,0 +1,25 @@
+(0 U 1)(0 U 1)* - ACCEPT
+1 U (0 U 1)* U 1 - ACCEPT
+(0 U 1)((0 U 1)(0 U 1))* - ACCEPT
+(1*011*(0 U 011*))* - ACCEPT
+(0 U 1)*110(0 U 1)* U * - REJECT
+(0 U 1)(0 U 1)*+ - REJECT
+(1*011*(0+011*) - REJECT
+(0 U 1) U (0 U 1)(0 U 1) U (0 U 1)(0 U 1) - ACCEPT
+*(1 U 0) - REJECT
+(abc1)?bc+u*??a+ - REJECT
+helloworld - ACCEPT
+1 U (0 U 1)* U 1 U 01|a - REJECT
+a|(b|c)*|c - REJECT
+? - REJECT
+((0 U 1)*1 U E)(00)*00? - ACCEPT
+(01 U 001 U 1)*(0 U 00 U E) - ACCEPT
+((a U b) U 1)++ - REJECT
+a*a(c U a)* - ACCEPT
+a - ACCEPT
+(this*is*wrong( U ) - REJECT
+(((((E)))))*((a)) - ACCEPT
+(((((E)))))*(a)) - REJECT
+E U E - ACCEPT
+b U  U  - REJECT
+i U will U pass U cmpiler - ACCEPT
